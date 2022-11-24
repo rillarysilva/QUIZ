@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="jogo">
+        <p id="pergunta">Pergunta</p>
+
+
+        <div id="alternativas">
+            <div onclick="marcar(this)" id="altA"><input class="abc" type="radio" name="alternativa" id="a">
+                <label for="a" id="lblA">Questão A</label>
+            </div>
+            <div onclick="marcar(this)" id="altB"><input class="abc" type="radio" name="alternativa" id="b">
+                <label for="b" id="lblB">Questão B</label>
+            </div>
+            <div onclick="marcar(this)" id="altC"><input class="abc" type="radio" name="alternativa" id="c">
+                <label for="c" id="lblC">Questão C</label>
+            </div>
+        </div>
+
+        <button id="responder" onclick="responder(this)">Responder</button>
+    </div>
+
+
+
+    <div id="painel">
+        <p id="txt"></p>
+
+
+        <div id="dados">
+            <p class="dados">Perguntas = <span id="num_pergunta">0</span></p>
+            <p class="dados">Acertos = <span id="num_acerto">0</span></p>
+            <p class="dados">Erros = <span id="num_erro">0</span></p>
+        </div>
+
+        <button onclick="aparecerPergunta()" id="jogar">Começar o jogo</button>
+        <button onclick="aparecerPergunta()" id="joga">Proxima Pergunta</button>
+    </div>
+
+
+    <script src="codigo.js"></script>
+</body>
+
+</html>

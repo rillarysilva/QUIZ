@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    justify-items: center;
+}
+
+#jogo {
+    height: 600px;
+    width: 40%;
+    background-color: #d2afff;
+    border-radius: 40px;
+    margin-right: 20px;
+    background-image: linear-gradient(to bottom, purple,  #a0078c);
+}
+
+#painel {
+    height: 600px;
+    width: 35%;
+    background-color: #d2afff;
+    border-radius: 30px;
+    background-image: url("quiz.jfif");
+    background-position: center;
+    background-position-y: -180px;
+}
+
+
+
+#pergunta {
+    border: solid skyblue;
+    display: block;
+    max-width: 100%;
+    padding: 50px 100px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 1.5em;
+    border-left: none;
+    border-right: none;
+}
+
+
+#alternativas {
+    display: block;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 1.5em;
+}
+
+#altB {
+    margin: 10px 0px;
+}
+
+#altA,
+#altB,
+#altC {
+    padding: 5px;
+    border: solid skyblue;
+    border-radius: 200px;
+    background-image: linear-gradient(to bottom, purple,  #a0078c);
+}
+
+
+button {
+    display: block;
+    font-size: 1.5em;
+    padding: 5px 60px;
+    margin: 80px auto;
+    border-radius: 200px;
+    background-image: linear-gradient(to bottom, purple,  #a0078c);
+    color: white;
+    border: solid skyblue;
+}
+
+img{
+    width: 50%;
+}
+
+#jogar{
+    margin-top: 500px;
+}
+
+#joga{
+    margin-top: 300px;
+}
+
+
+#txt {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#responder{
+    margin-top: 45px;
+}
+
+#painel p.dados {
+    margin-left: 20px;
+}
+
+#painel p {
+    font-size: 1.5em;
+}
+
+#joga, #jogo, #pergunta,
+#alternativas,
+#responder,
+#dados {
+    display: none;
+}
